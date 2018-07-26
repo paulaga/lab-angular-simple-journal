@@ -17,4 +17,9 @@ export class JournalService {
     return this.http.get(`${environment.BASE_URL}/api/journal-entries/`)
     .map((res) => res.json());
   }
+
+  getSingleNews(id){
+    return this.http.get(`${environment.BASE_URL}/api/journal-entries/${id}`)
+    .map((res) => res.json());
+  }
 }
