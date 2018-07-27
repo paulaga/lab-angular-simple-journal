@@ -3,6 +3,8 @@ import {Http} from '@angular/http';
 import 'rxjs/add/operator/map';
 import { environment } from '../environments/environment';
 
+const { BASE_URL } = environment;
+
 // export interface Journal {
 //   title: String,
 //   content: String,
